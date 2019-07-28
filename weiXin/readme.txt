@@ -1,0 +1,1 @@
+#this all code is coded by python3 but tencent offical code is python2 ,so there have some different between these.
