@@ -7,7 +7,7 @@ dimension by using average of data associated with time .
 #Standard libary
 import os
 import xlrd
-#Third part package
+#Third-party package
 import pandas as pd
 
 
