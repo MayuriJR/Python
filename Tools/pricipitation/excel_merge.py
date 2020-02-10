@@ -44,7 +44,7 @@ def merge_excel(exabs_path, sheet_list, outfilepath):
             if df is None:
                 df = _df
             else:
-                df = pd.concat([df, _df], join="inner", ignore_index=True)
+                df = pd.concat([df, _df], join="outer", ignore_index=True)
         df.to_excel(excel_writer=writer, sheet_name=sheetName, encoding="utf-8", index=False)
         print(sheetName + " save successfully ！ >>> total :%d ，this is %d" % (len(sheet_list), index))
         index += 1
