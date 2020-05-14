@@ -40,7 +40,7 @@ def merge_excel(file_abs_path, sheet_names, out_filepath):
         writer = pd.ExcelWriter(out_excel_path, engine='openpyxl')
         for excel_file in file_abs_path:
             try:
-                _df = pd.read_excel(excel_file, sheetname=sheet_name)
+                _df = pd.read_excel(excel_file, sheet_name=sheet_name)
             except Exception as e:
                 _df = None
                 print(e)
